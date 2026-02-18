@@ -1,7 +1,5 @@
 
 
-<hr/>
-
 <div align="center">
 
 <a href="https://www.embarcadero.com/products/delphi" target="_blank">
