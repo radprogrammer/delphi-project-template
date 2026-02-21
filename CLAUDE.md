@@ -1,12 +1,16 @@
 # [PROJECT NAME] — Claude Rules
 
+> **Missing style guide?** If `.delphi/style-guide.md` is absent, the submodule has not been
+> initialized. Run `git submodule update --init` to populate it before proceeding.
+
 @.delphi/style-guide.md
 
-> **Style guide note:** The imported file above is a versioned submodule.
-> To adopt the latest style guide, run after reviewing changelog:
+> **Updating the style guide:** The imported file above is pinned to a specific commit.
+> To adopt the latest version, run:
 > ```
 > git submodule update --remote .delphi
 > ```
+> Review the changelog in `.delphi/style-guide.md` before updating in an active project.
 
 ---
 
