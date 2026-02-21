@@ -1,0 +1,3 @@
+[submodule ".delphi"]
+	path = .delphi
+	url = https://github.com/radprogrammer/delphi-projects-standards
