@@ -56,14 +56,16 @@ and formatting rules are maintained in a versioned submodule at `.delphi/`:
 - `.delphi/style-guide.md` — naming conventions, code rules, file layout
 - `.delphi/code-formatting-guide.md` — indentation, spacing, line breaks
 
-To update to the latest standards:
-
+To update to the latest standards, run `update-standards.bat`, or run
+the following commands directly from the command line:
 ```bash
 git submodule update --remote .delphi
+git commit -a -m "Update .delphi submodule to latest standards"
+git push
 ```
 
 Review the changelogs in `.delphi/style-guide.md` and `.delphi/code-formatting-guide.md`
-before updating in an active project.
+before confirming the update — the batch file pauses for this before committing.
 
 ## Contributing
 
