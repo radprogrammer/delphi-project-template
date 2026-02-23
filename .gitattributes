@@ -19,6 +19,12 @@
 *.fmx   text eol=crlf
 *.lfm   text eol=crlf
 
+# Documentation and config use LF
+*.md  text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
 # ---- Common build/automation scripts ----
 # Batch files should be CRLF on Windows
 *.bat   text eol=crlf
