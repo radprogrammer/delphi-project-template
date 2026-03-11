@@ -14,7 +14,7 @@ type
   public
 
   ///<summary> Smoke test just to ensure the basic tooling is operational </summary>
-  [test] procedure ShouldReportSuccess;
+  [Test] procedure ShouldReportSuccess;
 
   end;
 

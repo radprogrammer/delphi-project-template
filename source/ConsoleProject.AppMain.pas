@@ -4,11 +4,11 @@ interface
 
 type
 
-  TAppMain = Record
+  TAppMain = record
     class procedure EmitTextError(const AMsg: string); static;
 
     class function Run: Integer; static;
-  End;
+  end;
 
 implementation
 
