@@ -30,7 +30,7 @@ uses
   DUnitX.Loggers.Xml.NUnit,
   {$ENDIF }
   DUnitX.TestFramework,
-  ConsoleProject.SmokeTest in 'ConsoleProject.SmokeTest.pas';
+  Test.ConsoleProject.Smoke in 'Test.ConsoleProject.Smoke.pas';
 
 { keep comment here to protect the following conditional from being removed by the IDE when adding a unit }
 {$IFNDEF TESTINSIGHT}

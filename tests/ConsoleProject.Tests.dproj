@@ -8,7 +8,7 @@
         <Platform Condition="'$(Platform)'==''">Win64</Platform>
         <ProjectGuid>{8A51E9DE-6C53-4EA5-B1AE-27737D1DBA5E}</ProjectGuid>
         <ProjectName Condition="'$(ProjectName)'==''">ConsoleProject.Tests</ProjectName>
-        <ProjectVersion>20.3</ProjectVersion>
+        <ProjectVersion>20.4</ProjectVersion>
         <TargetedPlatforms>3</TargetedPlatforms>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
@@ -49,6 +49,7 @@
     <PropertyGroup Condition="'$(Base)'!=''">
         <SanitizedProjectName>ConsoleProject_Tests</SanitizedProjectName>
         <DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
+        <DCC_Define>TESTINSIGHT;$(DCC_Define)</DCC_Define>
         <DCC_ExeOutput>.\$(Platform)\$(Config)</DCC_ExeOutput>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
         <DCC_UnitSearchPath>$(DUnitXxxxx);..\Source;C:\code\DUnitX\Source;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
@@ -100,7 +101,7 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="ConsoleProject.SmokeTest.pas"/>
+        <DCCReference Include="Test.ConsoleProject.Smoke.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

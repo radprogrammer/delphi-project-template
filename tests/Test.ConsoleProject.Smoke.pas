@@ -1,6 +1,4 @@
-unit ConsoleProject.SmokeTest;
-
-{PROJECT_TEMPLATE_FIRST_TEST}
+unit Test.ConsoleProject.Smoke;
 
 interface
 
@@ -10,7 +8,7 @@ uses
 type
 
   [TestFixture]
-  TDUnitXTooling = class
+  TDUnitXToolingValidation = class
   public
 
   ///<summary> Smoke test just to ensure the basic tooling is operational </summary>
@@ -21,12 +19,12 @@ type
 implementation
 
 
-procedure TDUnitXTooling.ShouldReportSuccess;
+procedure TDUnitXToolingValidation.ShouldReportSuccess;
 begin
   Assert.IsTrue(True, 'Smoketest - should be true');
 end;
 
 initialization
-  TDUnitX.RegisterTestFixture(TDUnitXTooling);
+  TDUnitX.RegisterTestFixture(TDUnitXToolingValidation);
 
 end.

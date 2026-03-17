@@ -38,6 +38,7 @@ OSX64/
 Win32/
 Win64/
 Android/
+TMSWeb/
 
 
 # Delphi compiler-generated binaries (safe to delete)
@@ -71,6 +72,7 @@ Android/
 *.tvsconfig
 *.dsk
 *.dsv
+*.prjmgc
 
 # Delphi history and backups
 __history/
@@ -82,7 +84,6 @@ __recovery/
 
 # Boss dependency manager vendor folder https://github.com/HashLoad/boss
 modules/
-TestInsightSettings.ini
 
 # FinalBuilder
 *.fbpInf    # Project info cache
@@ -95,3 +96,13 @@ TestInsightSettings.ini
 
 # SonarQube scanner working folder
 .scannerwork
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# TestInsight
+TestInsightSettings.ini

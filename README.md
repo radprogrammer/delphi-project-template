@@ -59,8 +59,8 @@ and formatting rules are maintained in a versioned submodule at `submodules/delp
 To update to the latest standards, run `update-standards.bat`, or run
 the following commands directly from the command line:
 ```bash
-git submodule update --remote .delphi
-git commit -a -m "Update .delphi submodule to latest standards"
+git submodule update --remote delphi-project-standards
+git commit -a -m "Update delphi-project-standards submodule to latest standards"
 git push
 ```
 
