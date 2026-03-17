@@ -310,7 +310,7 @@ function Remove-TargetFiles {
                     Write-Host "Deleted file: $($file.FullName)"
                 }
                 else {
-                    Write-Verbose "Deleted file: $($file.FullName)"
+                    Write-Host "Deleted file: $($file.FullName)"
                 }
 
                 if (-not $WhatIfPreference) {
@@ -353,7 +353,7 @@ function Remove-TargetDirectories {
                     Write-Host "Deleted directory: $($dir.FullName)"
                 }
                 else {
-                    Write-Verbose "Deleted directory: $($dir.FullName)"
+                    Write-Host "Deleted directory: $($dir.FullName)"
                 }
 
                 if (-not $WhatIfPreference) {
